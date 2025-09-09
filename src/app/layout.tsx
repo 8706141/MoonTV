@@ -14,6 +14,8 @@ import { ThemeProvider } from '../components/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
+export const runtime = 'edge';
+
 // 动态生成 metadata，支持配置更新后的标题变化
 export async function generateMetadata(): Promise<Metadata> {
   let siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'MoonTV';
